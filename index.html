@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Size Background Page</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full-size background styling */
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('frame.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Centered content styling */
+        .content {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Welcome to Our Site</h1>
+        <p>This is an example page with a full-sized background image. Customize this template to suit your website's needs.</p>
+    </div>
+
+</body>
+</html>
